@@ -1,5 +1,65 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../images/background.svg) no-repeat bottom / cover;
+  background: url(../images/background-2.svg) no-repeat bottom / cover,
+  linear-gradient(rgba(247, 248, 242, 0.95), rgba(225, 230, 212, 0.9)),
+  url(../images/background-1.svg) no-repeat bottom / cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 20vh; */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1vh;
+}
+
+nav a {
+  text-decoration: none;
+  color: #337069;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.logo {
+  background-color: #CCC;
+  border-radius: 1vh;
+  width: 15vh;
+  height: 5vh;
+}
+
+.perfil {
+  background-color: #CCC;
+  border-radius: 5vh;
+  width: 5vh;
+  height: 5vh;
+}
+
+section {
+  width: 80vh;
+  display: flex;
+  margin-top: 5vh;
+}
+
+section ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vh;
+}
+
+section li {
+  background-color: #CCC;
+  border-radius: 2vh;
+  width: 12vh;
+  height: 15vh;
 }
