@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+  --scale-hover: 1.2;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +17,11 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Quattrocento Sans", sans-serif;
+}
+
+main{
+  margin-left: 12.5%;
+  margin-right: 12.5%;
 }
 
 a{
@@ -95,12 +104,7 @@ section li {
   background-repeat: no-repeat;
 }
 .lij1:hover{
-  background-image: url(../images/imgs/dandaraban.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij2{
   background-image: url(../images/imgs/dogballacadban.jpg);
@@ -109,12 +113,7 @@ section li {
   background-position: 50%;
 }
 .lij2:hover{
-  background-image: url(../images/imgs/dogballacadban.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij3{
   background-image: url(../images/imgs/fobia.png);
@@ -123,12 +122,7 @@ section li {
   background-position: 50%;
 }
 .lij3:hover{
-  background-image: url(../images/imgs/fobia.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij4{
   background-image: url(../images/imgs/fukinfigban.webp);
@@ -137,12 +131,7 @@ section li {
   background-position: 50%;
 }
 .lij4:hover{
-  background-image: url(../images/imgs/fukinfigban.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij5{
   background-image: url(../images/imgs/gravityherosban.jpg);
@@ -151,12 +140,7 @@ section li {
   background-position: 50%;
 }
 .lij5:hover{
-  background-image: url(../images/imgs/gravityherosban.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij6{
   background-image: url(../images/imgs/horizonchaseban.jpg);
@@ -165,12 +149,7 @@ section li {
   background-position: 50%;
 }
 .lij6:hover{
-  background-image: url(../images/imgs/horizonchaseban.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij7{
   background-image: url(../images/imgs/kazeban.jpg);
@@ -179,12 +158,7 @@ section li {
   background-position: 50%;
 }
 .lij7:hover{
-  background-image: url(../images/imgs/kazeban.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij8{
   background-image: url(../images/imgs/noplacebaveryban.png);
@@ -193,12 +167,7 @@ section li {
   background-position: 50%;
 }
 .lij8:hover{
-  background-image: url(../images/imgs/noplacebaveryban.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij9{
   background-image: url(../images/imgs/torenban.jpg);
@@ -207,12 +176,7 @@ section li {
   background-position: 50%;
 }
 .lij9:hover{
-  background-image: url(../images/imgs/torenban.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij10{
   background-image: url(../images/imgs/lendaheroiban.webp);
@@ -221,12 +185,7 @@ section li {
   background-position: 50%;
 }
 .lij10:hover{
-  background-image: url(../images/imgs/lendaheroiban.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij11{
   background-image: url(../images/imgs/blackiris.jpg);
@@ -235,12 +194,7 @@ section li {
   background-position: 50%;
 }
 .lij11:hover{
-  background-image: url(../images/imgs/blackiris.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij12{
   background-image: url(../images/imgs/blazing-chromeban.jpg);
@@ -249,12 +203,7 @@ section li {
   background-position: 50%;
 }
 .lij12:hover{
-  background-image: url(../images/imgs/blazing-chromeban.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij13{
   background-image: url(../images/imgs/chromasquadban.jpg);
@@ -263,12 +212,7 @@ section li {
   background-position: 50%;
 }
 .lij13:hover{
-  background-image: url(../images/imgs/chromasquadban.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 .lij14{
   background-image: url(../images/imgs/colinalegacyban.webp);
@@ -277,12 +221,7 @@ section li {
   background-position: 50%;
 }
 .lij14:hover{
-  background-image: url(../images/imgs/colinalegacyban.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2vh;
-  width: 20vh;
-  height: 24vh;
+  transform: scale(var(--scale-hover));
 }
 
 footer{
@@ -369,4 +308,55 @@ footer ul{
   text-align: center;
   border-radius: 35px;
   /* width: 150px; */
+}
+
+/* CSS das páginas de cada jogo */
+
+.titpagjogo{
+  display: flex;
+  justify-content: space-between;
+}
+.fa-heart{
+font-size: 35px;
+margin-top: 30px;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.carroceldescrição{
+  float: left;
+  width: 50%;
+}
+.carrocel{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 350px;
+}
+
+.stdecomprar{
+  float: right;
+}
+.std{
+  width: 250px;
+  height: 350px;
+}
+.btcompra{
+  background-color: rgba(61, 144, 117, 1);
+  text-align: center;
+  font-size: 15px;
+  border-radius: 35px;
+  padding: 15px;
+  color: white;
+}
+.btcarrinho{
+  background-color: rgba(61, 144, 117, 1);
+  text-align: center;
+  font-size: 15px;
+  border-radius: 35px;
+  padding: 15px;
+  /* width: 150px; */
+  color: white;
 }
