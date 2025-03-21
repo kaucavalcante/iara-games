@@ -1,54 +1,62 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   height: 100vh;
   background:
     /* url(../images/background-2.svg) no-repeat bottom / cover, */
     linear-gradient(rgba(247, 248, 242, 0.96), rgba(225, 230, 212, 0.93)),
     url(../images/background-1.svg) no-repeat bottom / cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: "Quattrocento Sans", sans-serif;
 }
 
 nav {
+  position: fixed;
+  top: 5vh;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-nav ul {
+.logo img {
+  height: 90px;
+}
+
+.links {
   display: flex;
   list-style: none;
   gap: 7vh;
   padding: 0 10vh;
 }
 
-nav a {
+.links a {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: 24px;
+  padding: 12px 24px 10px 24px;
+  border-radius: 30px;
+  border: 2px solid transparent;
 }
 
 .inativo {
-  color: #ccc;
-  }
-
-.ativo {
-  color: #003793;
+  color: #0C80C2;
 }
 
 .inativo:hover {
-  background: linear-gradient(108deg, #0A4B9E 0%, #F4B27A 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #730302;
+  border: 2px solid #730302;
 }
 
-.logo img {
-  height: 5vh;
+.ativo {
+  color: #003793;
 }
 
 .perfil {
@@ -57,27 +65,49 @@ nav a {
 }
 
 section {
-  width: 50%;
   display: flex;
-  margin-top: 5vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
 }
 
-section ul {
-  display: flex;
+.cards {
+  width: 670px;
   list-style: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1vh;
+  align-items: center;
+  gap: 15px;
 }
 
-section li{
-  width: 150px;
-  height: 200px;
+.cards li{
+  width: 100px;
+  height: 150px;
   overflow: hidden;
+  border-radius: 16px;
+  transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
 }
 
-section li img{
+.cards img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.cards li:hover{
+  width: 200px;
+  height: 300px;
+  transition-delay: 0.1s;
+  z-index: 2;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
 }
