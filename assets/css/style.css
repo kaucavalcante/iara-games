@@ -85,7 +85,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 2vh;
 }
 
 .cards li{
