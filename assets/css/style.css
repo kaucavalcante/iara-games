@@ -10,14 +10,14 @@ body {
   height: 100vh;
   background:
     /* url(../images/background-2.svg) no-repeat bottom / cover, */
-    linear-gradient(rgba(247, 248, 242, 0.96), rgba(225, 230, 212, 0.93)),
+    linear-gradient(var(--backgournd-linear-1), var(--backgournd-linear-2)),
     url(../images/background-1.svg) no-repeat bottom / cover;
   font-family: "Quattrocento Sans", sans-serif;
 }
 
 nav {
-  position: fixed;
   top: 5vh;
+  position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
@@ -26,51 +26,57 @@ nav {
 }
 
 .logo img {
-  height: 9vh;
+  height: 8vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.2);
 }
 
 .links {
   display: flex;
   list-style: none;
-  gap: 7vh;
+  gap: 6vh;
   padding: 0 10vh;
 }
 
 .links a {
   text-decoration: none;
-  font-weight: 500;
   text-transform: uppercase;
   font-size: 2vh;
   padding: 1vh 2vh 0.5vh;
   border-radius: 3vh;
-  border: 0.2vh solid transparent;
+  border: 0.3vh solid transparent;
 }
 
 .inativo {
-  color: #0C80C2;
+  color: var(--primary-color-80);
 }
 
 .inativo:hover {
   color: var(--terciary-color-100);
   border: 0.3vh solid var(--terciary-color-100);
-  background-color: hsla(1, 97%, 23%, 0.1);
+  background-color: var(--terciary-color-10);
 }
 
 .ativo a {
-  color: #003793;
+  color: var(--primary-color-100);
   font-weight: 700;
 }
 
 .perfil {
-  color: #003793;
+  color: var(--primary-color-100);
   font-size: 5vh;
+  transition: transform 0.5s ease-in-out;
 }
 
 .perfil:hover {
-  color: #730302;
+  transform: scale(1.2);
 }
 
 section {
+  top: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,21 +85,28 @@ section {
 }
 
 .cards {
-  width: 80vh;
+  width: 125vh;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2vh;
+  gap: 1vh;
 }
 
 .cards li{
-  width: 12vh;
-  height: 18vh;
+  width: 15vh;
+  height: 25vh;
   overflow: hidden;
   border-radius: 2vh;
   transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
+}
+
+.cards li:hover{
+  width: 25vh;
+  height: 35vh;
+  transition-delay: 0.1s;
+  z-index: 2;
 }
 
 .cards img{
@@ -102,17 +115,8 @@ section {
   object-fit: cover;
 }
 
-.cards li:hover{
-  width: 24vh;
-  height: 36vh;
-  transition-delay: 0.1s;
-  z-index: 2;
-}
-
-footer {
-  background-color: #333;
-  color: white;
+/* footer {
   text-align: center;
   width: 100%;
   position: relative;
-}
+} */
