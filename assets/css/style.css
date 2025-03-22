@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
   margin: 0;
@@ -26,7 +26,7 @@ nav {
 }
 
 .logo img {
-  height: 90px;
+  height: 9vh;
 }
 
 .links {
@@ -40,10 +40,10 @@ nav {
   text-decoration: none;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 24px;
-  padding: 12px 24px 10px 24px;
-  border-radius: 30px;
-  border: 2px solid transparent;
+  font-size: 2vh;
+  padding: 1vh 2vh 0.5vh;
+  border-radius: 3vh;
+  border: 0.2vh solid transparent;
 }
 
 .inativo {
@@ -51,17 +51,23 @@ nav {
 }
 
 .inativo:hover {
-  color: #730302;
-  border: 2px solid #730302;
+  color: var(--terciary-color-100);
+  border: 0.3vh solid var(--terciary-color-100);
+  background-color: hsla(1, 97%, 23%, 0.1);
 }
 
-.ativo {
+.ativo a {
   color: #003793;
+  font-weight: 700;
 }
 
 .perfil {
   color: #003793;
-  font-size: 50px;
+  font-size: 5vh;
+}
+
+.perfil:hover {
+  color: #730302;
 }
 
 section {
@@ -73,7 +79,7 @@ section {
 }
 
 .cards {
-  width: 670px;
+  width: 80vh;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -83,10 +89,10 @@ section {
 }
 
 .cards li{
-  width: 100px;
-  height: 150px;
+  width: 12vh;
+  height: 18vh;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 2vh;
   transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
 }
 
@@ -97,8 +103,8 @@ section {
 }
 
 .cards li:hover{
-  width: 200px;
-  height: 300px;
+  width: 24vh;
+  height: 36vh;
   transition-delay: 0.1s;
   z-index: 2;
 }
@@ -106,7 +112,6 @@ section {
 footer {
   background-color: #333;
   color: white;
-  padding: 20px;
   text-align: center;
   width: 100%;
   position: relative;
