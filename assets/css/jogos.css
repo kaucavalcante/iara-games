@@ -33,7 +33,7 @@ h1 {
 }
 
 .imagens li{
-  width: 25vh;
+  width: 20vh;
   height: 20vh;
   overflow: hidden;
   border-radius: 2vh;
@@ -63,7 +63,7 @@ h1 {
 
 .descricao h2 {
   text-transform: uppercase;
-  font-size: 3vh;
+  font-size: 2.5vh;
   text-align: center;
 }
 
@@ -73,19 +73,22 @@ h1 {
 
 .botao{
   font-family: "Quattrocento Sans", sans-serif;
+  width: 20vh;
 }
 
 aside {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2vh;
 }
 
 aside .capa {
   width: 20vh;
-  height: 25vh;
+  height: 30vh;
   overflow: hidden;
   border-radius: 2vh;
+  margin-bottom: 2vh;
 }
 
 aside img{

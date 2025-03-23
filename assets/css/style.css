@@ -197,6 +197,7 @@ footer .icones a:hover, .links a:hover, .contato a:hover{
   text-align: center;
   border-radius: 4vh;
   transition: transform 0.5s ease-in-out;
+  font-size: 2vh;
 }
 
 .botao:hover {
