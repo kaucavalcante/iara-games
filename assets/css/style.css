@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ body {
     linear-gradient(var(--background-linear-1), var(--background-linear-2)),
     url(../images/background-1.svg) no-repeat bottom / cover;
   font-family: "Quattrocento Sans", sans-serif;
-  color: var(--base-color);
+  color: var(--base-color-1);
 }
 
 nav {
@@ -130,12 +130,12 @@ footer .icones {
 }
 
 footer .icones a {
-  color: var(--base-color);
+  color: var(--base-color-1);
   font-size: 4vh;
 }
 
 footer .linha {
-  border: 0.1vh solid var(--base-color);
+  border: 0.1vh solid var(--base-color-1);
   width: 100%;
 }
 
@@ -152,7 +152,7 @@ footer .links a{
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.5vh;
-  color: var(--base-color);
+  color: var(--base-color-1);
 }
 
 footer .informacoes {
@@ -178,7 +178,7 @@ footer .contato {
 
 footer .contato a {
   text-decoration: none;
-  color: var(--base-color);
+  color: var(--base-color-1);
 }
 
 footer .icones a:hover, .links a:hover, .contato a:hover{
@@ -186,18 +186,20 @@ footer .icones a:hover, .links a:hover, .contato a:hover{
   font-weight: bold;
 }
 
-footer .botao {
+.botao {
   padding: 1.5vh 6vh;
+  width: 100%;
   background-color: var(--secondary-color-80);
-  color: var(--base-color);
+  color: var(--base-color-1);
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   border-radius: 4vh;
   transition: transform 0.5s ease-in-out;
 }
 
-footer .botao:hover {
+.botao:hover {
   background-color: var(--primary-color-80);
   transform: scale(1.2);
 }

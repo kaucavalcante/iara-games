@@ -1,0 +1,93 @@
+main {
+  margin: auto 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 5vh;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0;
+  gap: 5vh;
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: normal;
+  color: var(--base-color-2);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4vh;
+}
+
+.imagens {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.imagens li{
+  width: 25vh;
+  height: 20vh;
+  overflow: hidden;
+  border-radius: 2vh;
+  transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
+}
+
+.imagens li:nth-child(2) {
+  width: 45vh;
+}
+
+.imagens img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagens li:hover{
+  width: 50%;
+}
+
+.descricao {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.descricao h2 {
+  text-transform: uppercase;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.descricao p {
+  font-size: 2.5vh;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+aside .capa {
+  width: 20vh;
+  height: 25vh;
+  overflow: hidden;
+  border-radius: 2vh;
+  transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
+}
+
+aside img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
