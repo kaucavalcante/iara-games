@@ -9,10 +9,10 @@
 body {
   height: 100vh;
   background:
-    /* url(../images/background-2.svg) no-repeat bottom / cover, */
-    linear-gradient(var(--backgournd-linear-1), var(--backgournd-linear-2)),
+    linear-gradient(var(--background-linear-1), var(--background-linear-2)),
     url(../images/background-1.svg) no-repeat bottom / cover;
   font-family: "Quattrocento Sans", sans-serif;
+  color: var(--base-color);
 }
 
 nav {
@@ -22,7 +22,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo img {
@@ -34,14 +34,14 @@ nav {
   transform: scale(1.2);
 }
 
-.links {
+.menu {
   display: flex;
   list-style: none;
   gap: 6vh;
   padding: 0 10vh;
 }
 
-.links a {
+.menu a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2vh;
@@ -50,19 +50,19 @@ nav {
   border: 0.3vh solid transparent;
 }
 
-.inativo {
-  color: var(--primary-color-80);
-}
-
-.inativo:hover {
-  color: var(--terciary-color-100);
-  border: 0.3vh solid var(--terciary-color-100);
-  background-color: var(--terciary-color-10);
-}
-
 .ativo a {
   color: var(--primary-color-100);
   font-weight: 700;
+}
+
+.inativo a {
+  color: var(--primary-color-80);
+}
+
+.inativo a:hover {
+  color: var(--terciary-color-100);
+  border: 0.3vh solid var(--terciary-color-100);
+  background-color: var(--terciary-color-10);
 }
 
 .perfil {
@@ -105,8 +105,7 @@ section {
 .cards li:hover{
   width: 25vh;
   height: 35vh;
-  transition-delay: 0.1s;
-  z-index: 2;
+  z-index: 1;
 }
 
 .cards img{
@@ -115,8 +114,90 @@ section {
   object-fit: cover;
 }
 
-/* footer {
+footer {
+  background-color: var(--secondary-color-100);
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 10vh;
+  gap: 2vh;
+}
+
+footer .icones {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  gap: 2vh;
+}
+
+footer .icones a {
+  color: var(--base-color);
+  font-size: 4vh;
+}
+
+footer .linha {
+  border: 0.1vh solid var(--base-color);
+  width: 100%;
+}
+
+footer .links {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
   text-align: center;
   width: 100%;
-  position: relative;
-} */
+  margin-bottom: 8vh;
+}
+
+footer .links a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+  color: var(--base-color);
+}
+
+footer .informacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .legal {
+  font-size: 1.5vh;
+  width: 50%;
+}
+
+footer .contato-botao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contato {
+  font-size: 1.5vh;
+}
+
+footer .contato a {
+  text-decoration: none;
+  color: var(--base-color);
+}
+
+footer .icones a:hover, .links a:hover, .contato a:hover{
+  color: var(--terciary-color-100);
+  font-weight: bold;
+}
+
+footer .botao {
+  padding: 1.5vh 6vh;
+  background-color: var(--secondary-color-80);
+  color: var(--base-color);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+footer .botao:hover {
+  background-color: var(--primary-color-80);
+  transform: scale(1.2);
+}
