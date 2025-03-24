@@ -9,15 +9,15 @@
 body {
   height: 100vh;
   background:
-    linear-gradient(var(--background-linear-1), var(--background-linear-2)),
+    linear-gradient(to bottom, var(--secondary-color-100) 15%, var(--background-linear-1) 50%, var(--secondary-color-100) 95%),
     url(../images/background-1.svg) no-repeat bottom / cover;
   font-family: "Quattrocento Sans", sans-serif;
   color: var(--base-color-1);
 }
 
 nav {
-  top: 5vh;
-  position: fixed;
+  margin-top: 5vh;
+  position: static;
   width: 100%;
   display: flex;
   align-items: center;
@@ -36,6 +36,7 @@ nav {
 
 .menu {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 6vh;
   padding: 0 10vh;
@@ -53,6 +54,7 @@ nav {
 .ativo a {
   color: var(--primary-color-100);
   font-weight: 700;
+  font-size: 2.5vh;
 }
 
 .inativo a {
@@ -77,12 +79,10 @@ nav {
 }
 
 section {
-  top: 2vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
+  align-items: start;
+  margin: 10vh 0 25vh 0;
 }
 
 .cards {
@@ -202,10 +202,11 @@ footer .icones a:hover, .links a:hover, .contato a:hover{
 
 .botao:hover {
   background-color: var(--primary-color-80);
+  color: var(--primary-color-100);
   transform: scale(1.2);
 }
 
 a:focus {
-  outline: 20px solid var(--primary-color-80);
+  outline: 2px solid var(--terciary-color-100);
   outline-offset: 3px;
 }
