@@ -12,7 +12,7 @@ body {
     linear-gradient(to bottom, var(--secondary-color-100) 15%, var(--background-linear-1) 50%, var(--secondary-color-100) 95%),
     url(../images/background-1.svg) no-repeat bottom / cover;
   font-family: "Quattrocento Sans", sans-serif;
-  color: var(--base-color-2);
+  color: var(--base-color-1);
 }
 
 nav {
@@ -52,13 +52,13 @@ nav {
 }
 
 .ativo a {
-  color: var(--primary-color-80);
+  color: var(--primary-color-60);
   font-weight: 700;
   font-size: 2.5vh;
 }
 
 .inativo a {
-  color: var(--primary-color-60);
+  color: var(--base-color-2);
 }
 
 .inativo a:hover {
