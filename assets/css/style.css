@@ -204,3 +204,8 @@ footer .icones a:hover, .links a:hover, .contato a:hover{
   background-color: var(--primary-color-80);
   transform: scale(1.2);
 }
+
+a:focus {
+  outline: 20px solid var(--primary-color-80);
+  outline-offset: 3px;
+}
