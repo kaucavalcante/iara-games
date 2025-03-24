@@ -12,7 +12,7 @@ body {
     linear-gradient(to bottom, var(--secondary-color-100) 15%, var(--background-linear-1) 50%, var(--secondary-color-100) 95%),
     url(../images/background-1.svg) no-repeat bottom / cover;
   font-family: "Quattrocento Sans", sans-serif;
-  color: var(--base-color-1);
+  color: var(--base-color-2);
 }
 
 nav {
@@ -131,7 +131,7 @@ footer .icones {
 }
 
 footer .icones a {
-  color: var(--base-color-2);
+  color: var(--base-color-1);
   font-size: 4vh;
 }
 
