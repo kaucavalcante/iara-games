@@ -164,6 +164,7 @@ footer .informacoes {
 footer .legal {
   font-size: 1.5vh;
   width: 50%;
+  color: var(--base-color-1);
 }
 
 footer .contato-botao {
@@ -174,7 +175,8 @@ footer .contato-botao {
 }
 
 footer .contato {
-  font-size: 1.5vh;
+  font-size: 2vh;
+  color: var(--primary-color-80);
 }
 
 footer .contato a {
@@ -203,8 +205,8 @@ footer .icones a:hover,
 }
 
 .botao:hover {
-  background-color: var(--primary-color-80);
-  color: var(--primary-color-100);
+  background-color: var(--secondary-color-80);
+  color: var(--base-color-1);
   transform: scale(1.2);
 }
 
