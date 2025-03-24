@@ -95,7 +95,7 @@ section {
   gap: 1vh;
 }
 
-.cards li{
+.cards li {
   width: 15vh;
   height: 25vh;
   overflow: hidden;
@@ -103,13 +103,13 @@ section {
   transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
 }
 
-.cards li:hover{
+.cards li:hover {
   width: 25vh;
   height: 35vh;
   z-index: 1;
 }
 
-.cards img{
+.cards img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -131,7 +131,7 @@ footer .icones {
 }
 
 footer .icones a {
-  color: var(--base-color-1);
+  color: var(--base-color-2);
   font-size: 4vh;
 }
 
@@ -149,7 +149,7 @@ footer .links {
   margin-bottom: 8vh;
 }
 
-footer .links a{
+footer .links a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.5vh;
@@ -182,7 +182,9 @@ footer .contato a {
   color: var(--base-color-1);
 }
 
-footer .icones a:hover, .links a:hover, .contato a:hover{
+footer .icones a:hover,
+.links a:hover,
+.contato a:hover {
   color: var(--terciary-color-100);
   font-weight: bold;
 }
