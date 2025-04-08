@@ -9,7 +9,6 @@
 body {
   height: 100vh;
   background:
-<<<<<<< HEAD
     linear-gradient(to bottom, var(--secondary-color-100) 15%, var(--background-linear-1) 50%, var(--secondary-color-100) 95%),
     url(../images/background-1.svg) no-repeat bottom / cover;
   font-family: "Quattrocento Sans", sans-serif;
@@ -19,26 +18,11 @@ body {
 nav {
   margin-top: 5vh;
   position: static;
-=======
-    /* url(../images/background-2.svg) no-repeat bottom / cover, */
-    linear-gradient(var(--backgournd-linear-1), var(--backgournd-linear-2)),
-    url(../images/background-1.svg) no-repeat bottom / cover;
-  font-family: "Quattrocento Sans", sans-serif;
-}
-
-nav {
-  top: 5vh;
-  position: fixed;
->>>>>>> 4e6fad70ccb64ad905f9e2103c89041b94e9b524
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
   z-index: 2;
-=======
-  z-index: 1;
->>>>>>> 4e6fad70ccb64ad905f9e2103c89041b94e9b524
 }
 
 .logo img {
@@ -50,24 +34,15 @@ nav {
   transform: scale(1.2);
 }
 
-<<<<<<< HEAD
 .menu {
   display: flex;
   align-items: center;
-=======
-.links {
-  display: flex;
->>>>>>> 4e6fad70ccb64ad905f9e2103c89041b94e9b524
   list-style: none;
   gap: 6vh;
   padding: 0 10vh;
 }
 
-<<<<<<< HEAD
 .menu a {
-=======
-.links a {
->>>>>>> 4e6fad70ccb64ad905f9e2103c89041b94e9b524
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2vh;
@@ -76,7 +51,6 @@ nav {
   border: 0.3vh solid transparent;
 }
 
-<<<<<<< HEAD
 .ativo a {
   color: var(--primary-color-60);
   font-weight: 700;
@@ -91,29 +65,11 @@ nav {
   color: var(--terciary-color-100);
   border: 0.3vh solid var(--terciary-color-100);
   background-color: var(--terciary-color-10);
-=======
-.inativo {
-  color: var(--primary-color-80);
-}
-
-.inativo:hover {
-  color: var(--terciary-color-100);
-  border: 0.3vh solid var(--terciary-color-100);
-  background-color: var(--terciary-color-10);
-}
-
-.ativo a {
-  color: var(--primary-color-100);
->>>>>>> 4e6fad70ccb64ad905f9e2103c89041b94e9b524
   font-weight: 700;
 }
 
 .perfil {
-<<<<<<< HEAD
   color: var(--primary-color-80);
-=======
-  color: var(--primary-color-100);
->>>>>>> 4e6fad70ccb64ad905f9e2103c89041b94e9b524
   font-size: 5vh;
   transition: transform 0.5s ease-in-out;
 }
@@ -123,19 +79,10 @@ nav {
 }
 
 section {
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: start;
   margin: 10vh 0 25vh 0;
-=======
-  top: 2vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
->>>>>>> 4e6fad70ccb64ad905f9e2103c89041b94e9b524
 }
 
 .cards {
@@ -148,11 +95,7 @@ section {
   gap: 1vh;
 }
 
-<<<<<<< HEAD
 .cards li {
-=======
-.cards li{
->>>>>>> 4e6fad70ccb64ad905f9e2103c89041b94e9b524
   width: 15vh;
   height: 25vh;
   overflow: hidden;
@@ -160,7 +103,6 @@ section {
   transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
 }
 
-<<<<<<< HEAD
 .cards li:hover {
   width: 25vh;
   height: 35vh;
@@ -168,22 +110,11 @@ section {
 }
 
 .cards img {
-=======
-.cards li:hover{
-  width: 25vh;
-  height: 35vh;
-  transition-delay: 0.1s;
-  z-index: 2;
-}
-
-.cards img{
->>>>>>> 4e6fad70ccb64ad905f9e2103c89041b94e9b524
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-<<<<<<< HEAD
 footer {
   background-color: var(--secondary-color-100);
   display: flex;
@@ -283,10 +214,3 @@ a:focus {
   outline: 2px solid var(--terciary-color-100);
   outline-offset: 3px;
 }
-=======
-/* footer {
-  text-align: center;
-  width: 100%;
-  position: relative;
-} */
->>>>>>> 4e6fad70ccb64ad905f9e2103c89041b94e9b524
