@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background:
+    linear-gradient(to bottom, var(--secondary-color-100) 15%, var(--background-linear-1) 50%, var(--secondary-color-100) 95%),
+    url(../images/background-1.svg) no-repeat bottom / cover;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: var(--base-color-1);
+}
+
+nav {
+  margin-top: 5vh;
+  position: static;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.logo img {
+  height: 8vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 6vh;
+  padding: 0 10vh;
+}
+
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2vh;
+  padding: 1vh 2vh 0.5vh;
+  border-radius: 3vh;
+  border: 0.3vh solid transparent;
+}
+
+.ativo a {
+  color: var(--primary-color-60);
+  font-weight: 700;
+  font-size: 2.5vh;
+}
+
+.inativo a {
+  color: var(--base-color-2);
+}
+
+.inativo a:hover {
+  color: var(--terciary-color-100);
+  border: 0.3vh solid var(--terciary-color-100);
+  background-color: var(--terciary-color-10);
+  font-weight: 700;
+}
+
+.perfil {
+  color: var(--primary-color-80);
+  font-size: 5vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+.perfil:hover {
+  transform: scale(1.2);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 10vh 0 25vh 0;
+}
+
+.cards {
+  width: 125vh;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+
+.cards li {
+  width: 15vh;
+  height: 25vh;
+  overflow: hidden;
+  border-radius: 2vh;
+  transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
+}
+
+.cards li:hover {
+  width: 25vh;
+  height: 35vh;
+  z-index: 1;
+}
+
+.cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: var(--secondary-color-100);
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 10vh;
+  gap: 2vh;
+}
+
+footer .icones {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  gap: 2vh;
+}
+
+footer .icones a {
+  color: var(--base-color-1);
+  font-size: 4vh;
+}
+
+footer .linha {
+  border: 0.1vh solid var(--base-color-1);
+  width: 100%;
+}
+
+footer .links {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 8vh;
+}
+
+footer .links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+  color: var(--base-color-1);
+}
+
+footer .informacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .legal {
+  font-size: 1.5vh;
+  width: 50%;
+  color: var(--base-color-1);
+}
+
+footer .contato-botao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contato {
+  font-size: 2vh;
+  color: var(--primary-color-80);
+}
+
+footer .contato a {
+  text-decoration: none;
+  color: var(--base-color-1);
+}
+
+footer .icones a:hover,
+.links a:hover,
+.contato a:hover {
+  color: var(--terciary-color-100);
+  font-weight: bold;
+}
+
+.botao {
+  padding: 1.5vh 6vh;
+  background-color: var(--secondary-color-80);
+  color: var(--base-color-1);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4vh;
+  transition: transform 0.5s ease-in-out;
+  font-size: 2vh;
+}
+
+.botao:hover {
+  background-color: var(--secondary-color-80);
+  color: var(--base-color-1);
+  transform: scale(1.2);
+}
+
+a:focus {
+  outline: 2px solid var(--terciary-color-100);
+  outline-offset: 3px;
+}

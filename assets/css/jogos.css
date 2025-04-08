@@ -1,0 +1,94 @@
+main {
+  margin: 5% 15%;
+  display: flex;
+  flex-direction: row;
+  gap: 5vh;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0;
+  gap: 5vh;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: normal;
+  color: var(--base-color-1);
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3.5vh;
+}
+
+.imagens {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.imagens li{
+  width: 20vh;
+  height: 20vh;
+  overflow: hidden;
+  border-radius: 2vh;
+  transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
+}
+
+.imagens li:nth-child(2) {
+  width: 45vh;
+}
+
+.imagens img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagens li:hover{
+  width: 50%;
+}
+
+.descricao {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.descricao h2 {
+  text-transform: uppercase;
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+.descricao p {
+  font-size: 2vh;
+}
+
+.botao{
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+}
+
+aside .capa {
+  width: 20vh;
+  height: 30vh;
+  overflow: hidden;
+  border-radius: 2vh;
+  margin-bottom: 2vh;
+}
+
+aside img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
