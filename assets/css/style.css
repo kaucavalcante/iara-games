@@ -214,3 +214,54 @@ a:focus {
   outline: 2px solid var(--terciary-color-100);
   outline-offset: 3px;
 }
+
+.cadastro-box {
+  background: var(--cor-fundo);
+  padding: 2vh;
+  border-radius: 1vh;
+  width: 30vh;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  color: var(--cor-texto);
+  box-shadow: var(--sombra);
+}
+
+.cadastro-box h2 {
+  margin: 0;
+  align-self: center;
+}
+
+.cadastro-box label {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+
+.cadastro-box span {
+  width: 6vh;
+  text-align: right;
+}
+
+.cadastro-box input {
+  flex: 1;
+  padding: 0.8vh;
+  border: none;
+  border-radius: 0.5vh;
+  outline: none;
+}
+
+.cadastro-box button {
+  padding: 1vh;
+  border: none;
+  border-radius: 0.5vh;
+  background: var(--cor-primaria);
+  color: var(--cor-texto);
+  cursor: pointer;
+  align-self: center;
+}
+
+.cadastro-box button:hover {
+  background: var(--cor-primaria-hover);
+}
