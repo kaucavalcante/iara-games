@@ -7,8 +7,8 @@
 
     <script src="https://kit.fontawesome.com/ba31b5627b.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="assets/css/var.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/var.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Iara Games</title>
 
@@ -21,8 +21,8 @@
       <a class="logo" href="../../index.html" alt=""><img src="./assets/images/logo.svg" alt="Logo Iara Games"></a>
 
       <ul class="menu">
-        <li class="ativo"><a href="./assets/pages/cadastro.html">Área do Usuário</a></li>
-        <li class="ativo"><a href="#" aria-current="page">Loja</a></li>
+        <li class="ativo"><a href="./assets/pages/cadastro.html" aria-current="page">Área do Usuário</a></li>
+        <li class="ativo"><a href="./assets/pages/loja.html" >Loja</a></li>
         <li class="inativo"><a href="#">Jogos do Usuário</a></li>
         <li class="inativo"><a href="#">Fórum</a></li>
         <li class="inativo"><a href="#">Suporte</a></li>
@@ -32,26 +32,61 @@
 
     </nav>
 
-    <section>
-
-      <ul class="cards">
-        <li><a href="assets/pages/01-dandara.html"><img src="assets/images/cards/01-dandara.webp" alt="Dandara"></a></li>
-        <li><a href="assets/pages/02-dodgeball.html"><img src="assets/images/cards/02-dodgeball.webp" alt="Dodgeball Academia"></a></li>
-        <li><a href="assets/pages/03-fobia.html"><img src="assets/images/cards/03-fobia.webp" alt="Fobia"></a></li>
-        <li><a href="assets/pages/04-friday-night.html"><img src="assets/images/cards/04-friday-night.webp" alt="Friday Night Funkin'"></a></li>
-        <li><a href="assets/pages/05-gravity-heroes.html"><img src="assets/images/cards/05-gravity-heroes.webp" alt="Gravity Heroes"></a></li>
-        <li><a href="assets/pages/06-horizon-chase.html"><img src="assets/images/cards/06-horizon-chase.webp" alt="Horizon Chase Turbo"></a></li>
-        <li><a href="assets/pages/07-kaze.html"><img src="assets/images/cards/07-kaze.webp" alt="Kaze and the Wild Masks"></a></li>
-        <li><a href="assets/pages/08-no-place.html"><img src="assets/images/cards/08-no-place.webp" alt="No Place for Bravery"></a></li>
-        <li><a href="assets/pages/09-toren.html"><img src="assets/images/cards/09-toren.webp" alt="Toren"></a></li>
-        <li><a href="assets/pages/10-hero.html"><img src="assets/images/cards/10-hero.webp" alt="Hero"></a></li>
-        <li><a href="assets/pages/11-black-iris.html"><img src="assets/images/cards/11-black-iris.webp" alt="Black Iris"></a></li>
-        <li><a href="assets/pages/12-blazing.html"><img src="assets/images/cards/12-blazing.webp" alt="Blazing Chrome"></a></li>
-        <li><a href="assets/pages/13-chroma.html"><img src="assets/images/cards/13-chroma.webp" alt="Chroma Squad"></a></li>
-        <li><a href="assets/pages/14-colina.html"><img src="assets/images/cards/14-colina.webp" alt="Colina Legacy"></a></li>
-      </ul>
-
-    </section>
+    <header class="hero">
+        <div class="hero-content">
+          <h1>Descubra Jogos 100% Brasileiros</h1>
+          <p>Explore, apoie e jogue títulos feitos por talentos nacionais. A Iara te guia pelas profundezas da criatividade brasileira!</p>
+          <a href="#destaques" class="btn">Ver Destaques</a>
+          <a href="#criadores" class="btn secundario">Conheça os Criadores</a>
+        </div>
+        <img src="iara-personagem.png" alt="Personagem Iara" class="hero-image">
+      </header>
+    
+      <section id="destaques" class="destaques">
+        <h2>Destaques da Semana</h2>
+        <div class="jogos-grid">
+          <div class="jogo-card">
+            <img src="jogo1.jpg" alt="Capa do Jogo 1">
+            <h3>Jogo 1</h3>
+            <p>Uma breve descrição do jogo em destaque.</p>
+          </div>
+          <div class="jogo-card">
+            <img src="jogo2.jpg" alt="Capa do Jogo 2">
+            <h3>Jogo 2</h3>
+            <p>Uma breve descrição do jogo em destaque.</p>
+          </div>
+          <!-- Adicione mais jogos aqui -->
+        </div>
+      </section>
+    
+      <section id="criadores" class="criadores">
+        <h2>Criadores em Destaque</h2>
+        <div class="criadores-grid">
+          <div class="criador-card">
+            <img src="dev1.jpg" alt="Criador 1">
+            <h3>Dev Studio 1</h3>
+            <p>Equipe independente do nordeste brasileiro.</p>
+          </div>
+          <div class="criador-card">
+            <img src="dev2.jpg" alt="Criador 2">
+            <h3>Dev Studio 2</h3>
+            <p>Especialistas em aventuras gráficas e visual novels.</p>
+          </div>
+        </div>
+      </section>
+    
+      <section id="sobre" class="sobre">
+        <h2>Sobre o Iara Games</h2>
+        <p>Iara Games é uma plataforma dedicada a promover e comercializar jogos criados por desenvolvedores brasileiros, celebrando a diversidade cultural e a criatividade local.</p>
+      </section>
+    
+      <section id="newsletter" class="newsletter">
+        <h2>Receba novidades no seu e-mail</h2>
+        <form>
+          <input type="email" placeholder="Digite seu e-mail">
+          <button type="submit">Assinar</button>
+        </form>
+      </section>
 
     <footer>
 
