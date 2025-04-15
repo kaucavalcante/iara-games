@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background:
+    linear-gradient(to bottom, var(--secondary-color-100) 15%, var(--background-linear-1) 50%, var(--secondary-color-100) 95%),
+    url(../images/background-1.svg) no-repeat bottom / cover;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: var(--base-color-1);
+}
+
+nav {
+  margin-top: 5vh;
+  position: static;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.logo img {
+  height: 8vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 6vh;
+  padding: 0 10vh;
+}
+
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2vh;
+  padding: 1vh 2vh 0.5vh;
+  border-radius: 3vh;
+  border: 0.3vh solid transparent;
+}
+
+.ativo a {
+  color: var(--primary-color-60);
+  font-weight: 700;
+  font-size: 2.5vh;
+}
+
+.inativo a {
+  color: var(--base-color-2);
+}
+
+.inativo a:hover {
+  color: var(--terciary-color-100);
+  border: 0.3vh solid var(--terciary-color-100);
+  background-color: var(--terciary-color-10);
+  font-weight: 700;
+}
+
+
+.perfil {
+  text-decoration: none;
+  font-size: 35px;
+  color: #122D62; 
+  
+}
+
+.perfil:hover {
+  color: #152852; 
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 10vh 0 25vh 0;
+}
+
+.cards {
+  width: 125vh;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+
+.cards li {
+  width: 15vh;
+  height: 25vh;
+  overflow: hidden;
+  border-radius: 2vh;
+  transition: width 0.7s ease-in-out, height 0.7s ease-in-out;
+}
+
+.cards li:hover {
+  width: 25vh;
+  height: 35vh;
+  z-index: 1;
+}
+
+.cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: var(--secondary-color-100);
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 10vh;
+  gap: 2vh;
+}
+
+footer .icones {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  gap: 2vh;
+}
+
+footer .icones a {
+  color: var(--base-color-1);
+  font-size: 4vh;
+}
+
+footer .linha {
+  border: 0.1vh solid var(--base-color-1);
+  width: 100%;
+}
+
+footer .links {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 8vh;
+}
+
+footer .links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+  color: var(--base-color-1);
+}
+
+footer .informacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .legal {
+  font-size: 1.5vh;
+  width: 50%;
+  color: var(--base-color-1);
+}
+
+footer .contato-botao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .contato {
+  font-size: 2vh;
+  color: var(--primary-color-80);
+}
+
+footer .contato a {
+  text-decoration: none;
+  color: var(--base-color-1);
+}
+
+footer .icones a:hover,
+.links a:hover,
+.contato a:hover {
+  color: var(--terciary-color-100);
+  font-weight: bold;
+}
+
+.botao {
+  padding: 1.5vh 6vh;
+  background-color: var(--secondary-color-80);
+  color: var(--base-color-1);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4vh;
+  transition: transform 0.5s ease-in-out;
+  font-size: 2vh;
+}
+
+.botao:hover {
+  background-color: var(--secondary-color-80);
+  color: var(--base-color-1);
+  transform: scale(1.2);
+}
+
+a:focus {
+  outline: 2px solid var(--terciary-color-100);
+  outline-offset: 3px;
+}
+
+.cadastro-box {
+  background: var(--cor-fundo);
+  padding: 2vh;
+  border-radius: 1vh;
+  width: 30vh;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  color: var(--cor-texto);
+  box-shadow: var(--sombra);
+}
+
+.cadastro-box h2 {
+  margin: 0;
+  align-self: center;
+}
+
+.cadastro-box label {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+
+.cadastro-box span {
+  width: 6vh;
+  text-align: right;
+}
+
+.cadastro-box input {
+  flex: 1;
+  padding: 0.8vh;
+  border: none;
+  border-radius: 0.5vh;
+  outline: none;
+}
+
+.cadastro-box button {
+  padding: 1vh;
+  border: none;
+  border-radius: 0.5vh;
+  background: var(--cor-primaria);
+  color: var(--cor-texto);
+  cursor: pointer;
+  align-self: center;
+}
+
+.cadastro-box button:hover {
+  background: var(--cor-primaria-hover);
+}
+
+.hero {
+  background: linear-gradient(to right, #a0eec0, #f7f0ff);
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: #2e4a2e;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Botões */
+.btn {
+  background-color: #5aaf7c;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.btn:hover {
+  background-color: #478b64;
+}
+
+.btn.secundario {
+  background-color: #b085d2;
+}
+
+/* Seções genéricas */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: #2e4a2e;
+  margin-bottom: 2rem;
+}
+
+/* Destaques e criadores */
+.jogos-grid,
+.criadores-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.jogo-card,
+.criador-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 1rem;
+  width: 200px;
+  color: #2e2e2e;
+  transition: transform 0.2s ease;
+}
+
+.jogo-card:hover,
+.criador-card:hover {
+  transform: translateY(-5px);
+}
+
+.jogo-card img,
+.criador-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Seção sobre */
+.sobre p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Newsletter */
+.newsletter form {
+  margin-top: 1rem;
+}
+
+.newsletter input {
+  padding: 0.75rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.newsletter button {
+  padding: 0.75rem 1.25rem;
+  background-color: #5aaf7c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}

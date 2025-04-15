@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.background {
+  background: url('bg2 (1).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  opacity: 0.2;
+  
+}
+
+main {
+  margin: 5% 15%;
+  display: flex;
+  flex-direction: row;
+  gap: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 350px;
+height: 500px;
+padding: 40px 30px;
+background: rgba(0, 20, 60, 0.9); 
+border-radius: 15px;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+color: #FFF;
+}
+
+h2 {
+color: #FFF;
+text-align: center;
+justify-content: center;
+font-family: "Quattrocento Sans", sans-serif;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+margin-bottom: 24px;
+border-radius: 10px;
+background: var(--linear-20-terciary-to-primary, linear-gradient(108deg, var(--terciary-100, rgba(115, 3, 2, 0.20)) 0%, var(--primary-100, rgba(3, 49, 140, 0.20)) 100%));
+padding: 16px;
+width: 227px;
+height: 73px;
+display: flex;
+flex-shrink: 0;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+form {
+width: 100%;
+}
+
+label {
+display: block;
+margin-bottom: 6px;
+color: #FFF;
+font-family: "Quattrocento Sans", sans-serif;
+font-size: 16px;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+}
+
+input {
+width: 100%;
+padding: 12px;
+border: none;
+border-radius: 8px;
+margin-bottom: 20px;
+font-size: 14px;
+background-color: #FFF;
+color: #000;
+}
+
+button {
+  width: 200px;
+  height: 49px;
+  flex-shrink: 0;
+color: #FFF;
+border: none;
+border-radius: 999px;
+background: var(--linear-20-terciary-to-primary, linear-gradient(108deg, var(--terciary-100, rgba(115, 3, 2, 0.20)) 0%, var(--primary-100, rgba(3, 49, 140, 0.20)) 100%));
+font-family: "Quattrocento Sans", sans-serif;
+font-size: 16px;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+cursor: pointer;
+transition: background 0.3s ease;
+align-items: center;
+display: block;
+margin: 0 auto;
+}
+
+button:hover {
+background-color: #5737b9;
+}
+
