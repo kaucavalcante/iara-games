@@ -68,16 +68,17 @@ nav {
   font-weight: 700;
 }
 
-
 .perfil {
   text-decoration: none;
   font-size: 35px;
-  color: #122D62; 
+  color: var(--primary-color-80); 
+  transition: transform 0.5s ease-in-out;
   
 }
 
 .perfil:hover {
-  color: #152852; 
+  transform: scale(1.2);
+
 }
 
 section {
@@ -215,6 +216,7 @@ footer .icones a:hover,
 a:focus {
   outline: 2px solid var(--terciary-color-100);
   outline-offset: 3px;
+
 }
 
 .cadastro-box {
