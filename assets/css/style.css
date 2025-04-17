@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
   margin: 0;
@@ -8,11 +8,9 @@
 
 body {
   height: 100vh;
-  background:
-    linear-gradient(to bottom, var(--secondary-color-100) 15%, var(--background-linear-1) 50%, var(--secondary-color-100) 95%),
-    url(../images/background-1.svg) no-repeat bottom / cover;
-  font-family: "Quattrocento Sans", sans-serif;
-  color: var(--base-color-1);
+  background: url(../images/background-1.svg) no-repeat bottom / cover;
+  font-family: "Nunito", sans-serif;
+  color: var(--primary-verde-medio);
 }
 
 nav {
@@ -26,7 +24,7 @@ nav {
 }
 
 .logo img {
-  height: 8vh;
+  height: 4rem;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -44,38 +42,43 @@ nav {
 
 .menu a {
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 2vh;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.025rem;
   padding: 1vh 2vh 0.5vh;
-  border-radius: 3vh;
-  border: 0.3vh solid transparent;
 }
 
 .ativo a {
-  color: var(--primary-color-60);
+  color: var(--primary-verde-escuro);
+  border-radius: 62.4375rem;
+  border-bottom: 1px solid var(--base-0);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
   font-weight: 700;
-  font-size: 2.5vh;
+  line-height: normal;
+  letter-spacing: 0.025rem;
 }
 
 .inativo a {
-  color: var(--base-color-2);
+  color: var(--primary-verde-medio);
 }
 
 .inativo a:hover {
-  color: var(--terciary-color-100);
-  border: 0.3vh solid var(--terciary-color-100);
-  background-color: var(--terciary-color-10);
+  color: var(--secondary-azul);
   font-weight: 700;
 }
 
 .perfil {
-  color: var(--primary-color-80);
-  font-size: 5vh;
+  color: var(--primary-verde-escuro);
+  font-size: 2rem;
   transition: transform 0.5s ease-in-out;
 }
 
 .perfil:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 section {
@@ -116,7 +119,7 @@ section {
 }
 
 footer {
-  background-color: var(--secondary-color-100);
+  background-color: var(--primary-verde-escuro);
   display: flex;
   flex-direction: column;
   padding: 4vh 10vh;
@@ -131,12 +134,12 @@ footer .icones {
 }
 
 footer .icones a {
-  color: var(--base-color-1);
+  color: var(--base-0);
   font-size: 4vh;
 }
 
 footer .linha {
-  border: 0.1vh solid var(--base-color-1);
+  border: 0.1vh solid var(--primary-verde-menta);
   width: 100%;
 }
 
@@ -153,7 +156,7 @@ footer .links a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.5vh;
-  color: var(--base-color-1);
+  color: var(--base-0);
 }
 
 footer .informacoes {
@@ -164,7 +167,7 @@ footer .informacoes {
 footer .legal {
   font-size: 1.5vh;
   width: 50%;
-  color: var(--base-color-1);
+  color: var(--base-0);
 }
 
 footer .contato-botao {
@@ -176,25 +179,25 @@ footer .contato-botao {
 
 footer .contato {
   font-size: 2vh;
-  color: var(--primary-color-80);
+  color: var(--secondary-bege);
 }
 
 footer .contato a {
   text-decoration: none;
-  color: var(--base-color-1);
+  color: var(--primary-verde-pastel);
 }
 
 footer .icones a:hover,
 .links a:hover,
 .contato a:hover {
-  color: var(--terciary-color-100);
+  color: var(--base-0);
   font-weight: bold;
 }
 
 .botao {
   padding: 1.5vh 6vh;
-  background-color: var(--secondary-color-80);
-  color: var(--base-color-1);
+  background-color: var(--primary-verde-medio);
+  color: var(--base-0);
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
@@ -205,12 +208,12 @@ footer .icones a:hover,
 }
 
 .botao:hover {
-  background-color: var(--secondary-color-80);
-  color: var(--base-color-1);
+  background-color: var(--secondary-bege);
+  color: var(--primary-verde-escuro);
   transform: scale(1.2);
 }
 
 a:focus {
-  outline: 2px solid var(--terciary-color-100);
+  outline: 2px solid var(--secondary-azul);
   outline-offset: 3px;
 }

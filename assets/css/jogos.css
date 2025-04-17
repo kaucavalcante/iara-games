@@ -12,9 +12,9 @@ article {
   align-items: center;
   padding: 5vh 0;
   gap: 5vh;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: normal;
-  color: var(--base-color-1);
+  color: var(--base-0);
 }
 
 h1 {
@@ -69,7 +69,7 @@ h1 {
 }
 
 .botao{
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 aside {
