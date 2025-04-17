@@ -216,7 +216,6 @@ footer .icones a:hover,
 a:focus {
   outline: 2px solid var(--terciary-color-100);
   outline-offset: 3px;
-
 }
 
 .cadastro-box {
