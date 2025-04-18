@@ -7,8 +7,8 @@
 }
 
 body {
-  height: 100vh;
-  background: url(../images/background-1.svg) no-repeat bottom / cover;
+  min-height: 100vh;
+  background: url(../images/folhagens.png);
   font-family: "Nunito", sans-serif;
   color: var(--primary-verde-medio);
 }
