@@ -9,15 +9,17 @@
 body {
   height: 100vh;
   background:
-    linear-gradient(to bottom, var(--secondary-color-100) 15%, var(--background-linear-1) 50%, var(--secondary-color-100) 95%),
-    url(../images/background-1.svg) no-repeat bottom / cover;
+    linear-gradient(to bottom, var(--secondary-color-1) 15%, var(--background-linear-1) 50%, var(--secondary-color-1) 95%),
+    url(../images/background.svg) no-repeat bottom / cover fixed;
   font-family: "Quattrocento Sans", sans-serif;
   color: var(--base-color-1);
 }
 
+/* -------------------- NAV -------------------- */
+
 nav {
-  margin-top: 5vh;
-  position: static;
+  background: url(../images/bg-nav.svg) repeat-x left top / auto 100%;
+  height: 20vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -52,13 +54,13 @@ nav {
 }
 
 .ativo a {
-  color: var(--primary-color-60);
+  color: var(--base-color-3);
   font-weight: 700;
   font-size: 2.5vh;
 }
 
 .inativo a {
-  color: var(--base-color-2);
+  color: var(--primary-color-80);
 }
 
 .inativo a:hover {
@@ -69,23 +71,185 @@ nav {
 }
 
 .perfil {
-  text-decoration: none;
-  font-size: 35px;
-  color: var(--primary-color-80); 
+  color: var(--primary-color-80);
+  font-size: 5vh;
   transition: transform 0.5s ease-in-out;
-  
 }
 
 .perfil:hover {
   transform: scale(1.2);
-
 }
 
-section {
+/* ---------------- SECTION HERO ---------------- */
+
+.hero {
+  background: url(../images/hero.svg) no-repeat bottom center / 100% auto;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 60vh;
+  padding-bottom: 30vh;
+  gap: 3vh;
+}
+
+.hero h1 {
+  width: 40vh;
+  font-size: 5vh;
+  color: var(--secondary-color-80);
+}
+
+/* ------------- SECTION DESTAQUES -------------- */
+
+.destaques{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+.conteudo-destaques{
+  width: 50%;
+  padding-bottom: 5vh;
+}
+
+.destaques h2{
+  color: var(--base-color-3);
+  font-size: 3vh;
+  padding-bottom: 2vh;
+}
+
+.cards-destaques {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4vh;
+}
+
+.cards-destaques li {
+  width: 16vh;
+  height: 24vh;
+  overflow: hidden;
+  border-radius: 2vh;
+  border: 0.5vh solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.cards-destaques li:hover {
+  border-color: var(--secondary-color-80);
+}
+
+.cards-destaques img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------- SECTION CATEGORIAS ------------- */
+
+.categorias{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+.conteudo-categorias{
+  width: 50%;
+  padding-bottom: 5vh;
+}
+
+.categorias h2{
+  color: var(--base-color-3);
+  font-size: 3vh;
+  padding-bottom: 2vh;
+}
+
+.cards-categorias {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 4vh;
+}
+
+.cards-categorias li a {
+  text-decoration: none;
+  color: var(--base-color-3);
+}
+
+.cards-categorias li {
+  padding: 2vh 6vh;
+  background-color: hsl(160, 50%, 50%);
+  color: var(--base-color-1);
+  font-weight: 600;
+  border-radius: 4vh;
+  font-size: 2vh;
+  border: 0.5vh solid transparent;
+  transition: border-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cards-categorias li:hover {
+  border-color: var(--secondary-color-80);
+}
+
+/* ---------------- SECTION SOBRE --------------- */
+
+.sobre{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+.conteudo-sobre{
+  width: 50%;
+  padding-bottom: 5vh;
+}
+.sobre h2{
+  color: var(--base-color-3);
+  font-size: 3vh;
+  padding-bottom: 2vh;
+}
+.sobre p{
+  color: var(--base-color-3);
+  font-size: 2vh;
+  line-height: 3vh;
+}
+.rosto-iarinha{
+  border-radius: 2vh;
+  width: 25vh;
+  height: 25vh;
+}
+.sobre .bio{
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  gap: 2vh;
+}
+
+.texto-botao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+/* -------------------- LOJA -------------------- */
+
+.catalogo{
   display: flex;
   justify-content: center;
   align-items: start;
-  margin: 10vh 0 25vh 0;
+  margin: 5vh 0;
 }
 
 .cards {
@@ -118,8 +282,64 @@ section {
   object-fit: cover;
 }
 
+/* ------------------ CADASTRO ------------------ */
+
+.cadastro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro-conteudo{
+  background: linear-gradient(0deg, #2E6B6B 0%, #6AB18E 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35vh;
+  border-radius: 5vh;
+  padding: 3vh 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+.cadastro h2{
+  color: var(--base-color-1);
+  font-weight: 800;
+  font-size: 3vh;
+  text-transform: uppercase;
+  padding: 1vh 0;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 0;
+}
+
+label{
+  font-weight: 600;
+  font-size: 2vh;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  background-color: var(--base-color-1);
+  height: 5vh;
+  border-radius: 1vh;
+  padding-left: 10px;
+  font-size: 1.5vh;
+}
+
+/* ------------------- FOOTER ------------------- */
+
 footer {
-  background-color: var(--secondary-color-100);
+  background: linear-gradient(0deg, #2E6B6B 0%, #6AB18E 100%);
   display: flex;
   flex-direction: column;
   padding: 4vh 10vh;
@@ -194,6 +414,10 @@ footer .icones a:hover,
   font-weight: bold;
 }
 
+
+
+/* ------------------- OUTROS ------------------- */
+
 .botao {
   padding: 1.5vh 6vh;
   background-color: var(--secondary-color-80);
@@ -213,183 +437,32 @@ footer .icones a:hover,
   transform: scale(1.2);
 }
 
+.botao-hero {
+  padding: 1.5vh 6vh;
+  background-color: var(--secondary-color-80);
+  color: var(--base-color-1);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4vh;
+  transition: transform 0.5s ease-in-out;
+  font-size: 2vh;
+}
+
+.botao-hero:hover {
+  background-color: var(--primary-color-80);
+  color: var(--base-color-1);
+}
+
 a:focus {
   outline: 2px solid var(--terciary-color-100);
   outline-offset: 3px;
 }
 
-.cadastro-box {
-  background: var(--cor-fundo);
-  padding: 2vh;
-  border-radius: 1vh;
-  width: 30vh;
-  margin: 5vh auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vh;
-  color: var(--cor-texto);
-  box-shadow: var(--sombra);
-}
-
-.cadastro-box h2 {
-  margin: 0;
-  align-self: center;
-}
-
-.cadastro-box label {
-  display: flex;
-  align-items: center;
-  gap: 1vh;
-}
-
-.cadastro-box span {
-  width: 6vh;
-  text-align: right;
-}
-
-.cadastro-box input {
-  flex: 1;
-  padding: 0.8vh;
-  border: none;
-  border-radius: 0.5vh;
-  outline: none;
-}
-
-.cadastro-box button {
-  padding: 1vh;
-  border: none;
-  border-radius: 0.5vh;
-  background: var(--cor-primaria);
-  color: var(--cor-texto);
-  cursor: pointer;
-  align-self: center;
-}
-
-.cadastro-box button:hover {
-  background: var(--cor-primaria-hover);
-}
-
-.hero {
-  background: linear-gradient(to right, #a0eec0, #f7f0ff);
-  padding: 4rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.hero-content {
-  max-width: 600px;
-  color: #2e4a2e;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.hero-image {
-  max-width: 300px;
+.decoracao {
   width: 100%;
-}
-
-/* Botões */
-.btn {
-  background-color: #5aaf7c;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-.btn:hover {
-  background-color: #478b64;
-}
-
-.btn.secundario {
-  background-color: #b085d2;
-}
-
-/* Seções genéricas */
-section {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-h2 {
-  color: #2e4a2e;
-  margin-bottom: 2rem;
-}
-
-/* Destaques e criadores */
-.jogos-grid,
-.criadores-grid {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.jogo-card,
-.criador-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  padding: 1rem;
-  width: 200px;
-  color: #2e2e2e;
-  transition: transform 0.2s ease;
-}
-
-.jogo-card:hover,
-.criador-card:hover {
-  transform: translateY(-5px);
-}
-
-.jogo-card img,
-.criador-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-/* Seção sobre */
-.sobre p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  color: #444;
-}
-
-/* Newsletter */
-.newsletter form {
-  margin-top: 1rem;
-}
-
-.newsletter input {
-  padding: 0.75rem;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-right: 0.5rem;
-  font-size: 1rem;
-}
-
-.newsletter button {
-  padding: 0.75rem 1.25rem;
-  background-color: #5aaf7c;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1rem;
+  height: 30vh;
+  background: url(../images/decoracao.svg) repeat-x top center;
+  background-size: auto 100%;
 }

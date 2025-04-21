@@ -9,9 +9,9 @@
 
     <link rel="stylesheet" href="../css/var.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/jogos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 
-    <title>Iara Games: Toren</title>
+    <title>Iara Games</title>
 
   </head>
 
@@ -19,51 +19,55 @@
 
     <nav>
 
-      
-      <a class="logo" href="../../index.html" alt=""><img src="../images/logo.svg" alt="Logo Iara Games"></a>
+      <a class="logo" href="../../index.html"><img src="./../images/logo.svg" alt="Logo Iara Games"></a>
 
       <ul class="menu">
-
-       
-  
-        </a></li>
-        <li class="inativo"><a href="../pages/loja.html">Loja</a></li>
-        <li class="ativo"><a href="cadastro.html" aria-current="page">Área do Usuário</a></li>
-        <li class="ativo"><a href="loja.html" >Loja</a></li>
+        <li class="inativo"><a href="loja.html">Loja</a></li>
         <li class="inativo"><a href="#">Jogos do Usuário</a></li>
         <li class="inativo"><a href="#">Fórum</a></li>
         <li class="inativo"><a href="#">Suporte</a></li>
       </ul>
-  
-      <a class="perfil" href="../pages/user.html">
-        <i class="fa-solid fa-circle-user"></i>
-      </a>
-      
+
+      <a class="perfil" href="#" aria-label="Perfil do usuário"><i class="fa-solid fa-circle-user"></i></a>
     </nav>
 
     <main>
 
-      <article>
-        <h1>Toren</h1>
-        <ul class="imagens">
-          <li><img src="../images/dados/09b-toren.webp" alt=""></li>
-          <li><img src="../images/dados/09a-toren.webp" alt=""></li>
-          <li><img src="../images/dados/09c-toren.webp" alt=""></li>
-        </ul>
-        <div class="descricao">
-          <h2>Ascenda a torre, enfrente seus medos e descubra seu destino em Toren!</h2>
-          <p>Jogo de aventura e puzzle em terceira pessoa, desenvolvido pelo estúdio brasileiro Swordtales. Nele, você acompanha a jornada poética de Moonchild, uma jovem destinada a escalar a misteriosa torre Toren, enfrentando desafios e desvendando segredos em um mundo cheio de simbolismos. Com uma narrativa profunda, visuais deslumbrantes e trilha sonora envolvente, Toren oferece uma experiência única, misturando exploração, quebra-cabeças e momentos de reflexão em uma bela fábula sobre coragem e crescimento.</p>
+      <div class="cadastro">
+  
+        <div class="cadastro-conteudo">
+  
+          <h2>Cadastre-se</h2>
+          
+          <form name="dados" id="dados" method="post" action="" class="box-form">
+  
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" required minlength="10" maxlength="50" placeholder="Digite seu nome">
+            </div>
+  
+            <div class="campo">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            </div>
+  
+            <div class="campo">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" required minlength="8" maxlength="12" placeholder="Crie uma senha">
+            </div>
+  
+            <div class="campo">
+              <a class="botao-hero" href=""> Criar conta </a>
+            </div>
+          </form>
+  
         </div>
-        <a class="botao" href="../../index.html"> Voltar </a>
-      </article>
-
-      <aside>
-        <div class="capa"><img src="../images/cards/09-toren.webp" alt=""></div>
-        <a class="botao" href=""> Salvar </a>
-        <a class="botao" href=""> Comprar </a>
-      </aside>
-
+  
+      </div>
+  
     </main>
+
+    <div class="decoracao"></div>
 
     <footer>
 
@@ -93,7 +97,7 @@
 
           <p class="contato"> Entre em contato: <a href="#"> iaragamesoficial@gmail.com </a></p>
 
-          <a class="botao" href="#top" alt="botão de volta ao topo da página"> Voltar ao topo </a>
+          <a class="botao" href="#top" aria-label="Voltar ao topo da página"> Voltar ao topo </a>
 
         </div>
 
