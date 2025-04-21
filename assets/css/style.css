@@ -12,7 +12,9 @@ body {
     linear-gradient(to bottom, var(--background-1) 15%, var(--background-2) 50%, var(--background-1) 95%),
     url(../images/background-principal.svg) no-repeat bottom / cover fixed;
   font-family: "Nunito", sans-serif;
-  color: var(--primary-verde-medio);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-verde-escuro);
 }
 
 /* -------------------- NAV -------------------- */
@@ -24,7 +26,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
 }
 
 .logo img {
@@ -46,8 +47,6 @@ nav {
 
 .menu a {
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -65,12 +64,11 @@ nav {
 
 .inativo a:hover {
   color: var(--primary-verde-escuro);
-  font-weight: 700;
 }
 
 .perfil {
   color: var(--secondary-azul-iara);
-  font-size: 5vh;
+  font-size: 3rem;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -82,7 +80,7 @@ nav {
 
 .hero {
   background: url(../images/iara-hero.svg) no-repeat bottom center / 100% auto;
-  height: 83vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -94,15 +92,14 @@ nav {
 
 .hero h1 {
   width: 40vh;
-  font-size: 5vh;
-  color: var(--primary-verde-escuro);
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
 /* ------------- SECTION DESTAQUES -------------- */
 
 .titulo{
-  color: var(--primary-verde-escuro);
-  font-size: 3vh;
+  font-size: 1.8rem;
   padding-bottom: 2vh;
 }
 
@@ -179,9 +176,7 @@ nav {
 .cards-categorias li {
   padding: 2vh 6vh;
   background-color: var(--secondary-laranja-pessego);
-  font-weight: 600;
   border-radius: 4vh;
-  font-size: 2vh;
   border: 0.5vh solid transparent;
   transition: border-color 0.2s ease-in-out;
   cursor: pointer;
@@ -200,21 +195,18 @@ nav {
   align-items: center;
   padding: 2vh;
 }
+
 .conteudo-sobre{
   width: 50%;
   padding-bottom: 5vh;
 }
-.sobre p{
-  color: var(--primary-verde-escuro);
-  font-size: 2vh;
-  line-height: 3vh;
-  font-weight: 600;
-}
-.rosto-iarinha{
+
+.perfil-iara{
   border-radius: 2vh;
   width: 25vh;
   height: 25vh;
 }
+
 .sobre .bio{
   display: flex;
   justify-content: left;
@@ -260,7 +252,6 @@ nav {
 .cards li:hover {
   width: 25vh;
   height: 35vh;
-  z-index: 1;
 }
 
 .cards img {
@@ -278,7 +269,7 @@ nav {
 }
 
 .cadastro-conteudo{
-  background: linear-gradient(0deg, #2E6B6B 0%, #6AB18E 100%);
+  background: var(--gradiente-1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -296,7 +287,7 @@ form{
 .cadastro h2{
   color: var(--secondary-bege);
   font-weight: 800;
-  font-size: 3vh;
+  font-size: 1.8rem;
   text-transform: uppercase;
   padding: 1vh 0;
 }
@@ -309,24 +300,22 @@ form{
 
 label{
   font-weight: 600;
-  font-size: 2vh;
   color: var(--base-0);
 }
 
 input {
-  width: 100%;
   border: 0;
   background-color: var(--base-0);
   height: 5vh;
   border-radius: 1vh;
   padding-left: 10px;
-  font-size: 1.5vh;
+  font-size: 1rem;
 }
 
 /* ------------------- FOOTER ------------------- */
 
 footer {
-  background: linear-gradient(0deg, #2E6B6B 0%, #6AB18E 100%);
+  background: var(--gradiente-1);
   display: flex;
   flex-direction: column;
   padding: 4vh 10vh;
@@ -342,7 +331,7 @@ footer .icones {
 
 footer .icones a {
   color: var(--base-0);
-  font-size: 4vh;
+  font-size: 2.5rem;
 }
 
 footer .linha {
@@ -362,7 +351,7 @@ footer .links {
 footer .links a {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.5vh;
+  font-size: 1rem;
   color: var(--base-0);
 }
 
@@ -372,7 +361,7 @@ footer .informacoes {
 }
 
 footer .legal {
-  font-size: 1.5vh;
+  font-size: 0.8rem;
   width: 50%;
   color: var(--base-0);
 }
@@ -385,7 +374,6 @@ footer .contato-botao {
 }
 
 footer .contato {
-  font-size: 2vh;
   color: var(--secondary-bege);
 }
 
@@ -397,8 +385,8 @@ footer .contato a {
 footer .icones a:hover,
 .links a:hover,
 .contato a:hover {
-  color: var(--base-0);
-  font-weight: bold;
+  color: var(--secondary-azul);
+  font-weight: 900;
 }
 
 
@@ -409,13 +397,12 @@ footer .icones a:hover,
   padding: 1.5vh 6vh;
   background-color: var(--primary-verde-medio);
   color: var(--base-0);
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   border-radius: 4vh;
   transition: transform 0.5s ease-in-out;
-  font-size: 2vh;
 }
 
 .botao:hover {

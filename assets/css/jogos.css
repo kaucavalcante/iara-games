@@ -13,13 +13,12 @@ article {
   padding: 5vh 0;
   gap: 5vh;
   font-family: "Nunito", sans-serif;
-  font-weight: normal;
   color: var(--secondary-azul);
 }
 
 h1 {
   text-transform: uppercase;
-  font-size: 3.5vh;
+  font-size: 2rem;
   font-weight: 900;
 }
 
@@ -61,12 +60,8 @@ h1 {
 
 .descricao h2 {
   text-transform: uppercase;
-  font-size: 2.5vh;
+  font-size: 1.5rem;
   text-align: center;
-}
-
-.descricao p {
-  font-size: 2vh;
 }
 
 aside {

@@ -19,4 +19,5 @@
   --secondary-laranja-pessego: #F2AA6B;
   --background-1: hsla(40, 100%, 99%, 0.9);
   --background-2: hsla(140, 27%, 94%, 0.9);
+  --gradiente-1: linear-gradient(0deg, #2E6B6B 0%, #6AB18E 100%);
 }
