@@ -46,7 +46,7 @@ nav {
 
 .menu a {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -82,7 +82,7 @@ nav {
 
 .hero {
   background: url(../images/iara-hero.svg) no-repeat bottom center / 100% auto;
-  height: 85vh;
+  height: 83vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -95,10 +95,16 @@ nav {
 .hero h1 {
   width: 40vh;
   font-size: 5vh;
-  color: var(--secondary-color-80);
+  color: var(--primary-verde-escuro);
 }
 
 /* ------------- SECTION DESTAQUES -------------- */
+
+.titulo{
+  color: var(--primary-verde-escuro);
+  font-size: 3vh;
+  padding-bottom: 2vh;
+}
 
 .destaques{
   width: 100%;
@@ -111,12 +117,6 @@ nav {
 .conteudo-destaques{
   width: 50%;
   padding-bottom: 5vh;
-}
-
-.destaques h2{
-  color: var(--base-color-3);
-  font-size: 3vh;
-  padding-bottom: 2vh;
 }
 
 .cards-destaques {
@@ -138,7 +138,7 @@ nav {
 }
 
 .cards-destaques li:hover {
-  border-color: var(--secondary-color-80);
+  border-color: var(--primary-verde-medio);
 }
 
 .cards-destaques img {
@@ -162,12 +162,6 @@ nav {
   padding-bottom: 5vh;
 }
 
-.categorias h2{
-  color: var(--base-color-3);
-  font-size: 3vh;
-  padding-bottom: 2vh;
-}
-
 .cards-categorias {
   list-style: none;
   display: flex;
@@ -184,8 +178,7 @@ nav {
 
 .cards-categorias li {
   padding: 2vh 6vh;
-  background-color: hsl(160, 50%, 50%);
-  color: var(--base-color-1);
+  background-color: var(--secondary-laranja-pessego);
   font-weight: 600;
   border-radius: 4vh;
   font-size: 2vh;
@@ -195,7 +188,7 @@ nav {
 }
 
 .cards-categorias li:hover {
-  border-color: var(--secondary-color-80);
+  border-color: var(--primary-verde-medio);
 }
 
 /* ---------------- SECTION SOBRE --------------- */
@@ -211,15 +204,11 @@ nav {
   width: 50%;
   padding-bottom: 5vh;
 }
-.sobre h2{
-  color: var(--base-color-3);
-  font-size: 3vh;
-  padding-bottom: 2vh;
-}
 .sobre p{
-  color: var(--base-color-3);
+  color: var(--primary-verde-escuro);
   font-size: 2vh;
   line-height: 3vh;
+  font-weight: 600;
 }
 .rosto-iarinha{
   border-radius: 2vh;
