@@ -177,14 +177,10 @@ nav {
   gap: 4vh;
 }
 
-.cards-categorias li a {
-  text-decoration: none;
-  color: var(--primary-verde-cabelo);
-}
-
 .cards-categorias li {
   padding: 2vh 6vh;
   background-color: var(--primary-verde-menta);
+  color: var(--primary-verde-cabelo);
   border-radius: 4vh;
   border: 0.5vh solid transparent;
   transition: border-color 0.2s ease-in-out;
@@ -427,7 +423,7 @@ footer .icones a:hover,
   background-size: auto 100%;
 }
 
-a:focus, button:focus, [role="button"]:focus {
+a:focus, button:focus, [role="button"]:focus, [role="menuitem"]:focus {
   outline: 0.4vh solid var(--secondary-azul);
   outline-offset: 0.3vh;  
 }
