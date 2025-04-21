@@ -9,7 +9,7 @@
 body {
   height: 100vh;
   background:
-    linear-gradient(to bottom, var(--secondary-color-1) 15%, var(--background-linear-1) 50%, var(--secondary-color-1) 95%),
+    linear-gradient(to bottom, var(--background-1) 15%, var(--background-2) 50%, var(--background-1) 95%),
     url(../images/background-principal.svg) no-repeat bottom / cover fixed;
   font-family: "Nunito", sans-serif;
   color: var(--primary-verde-medio);
@@ -28,7 +28,7 @@ nav {
 }
 
 .logo img {
-  height: 4rem;
+  height: 10vh;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -40,39 +40,37 @@ nav {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 6vh;
+  gap: 10vh;
   padding: 0 10vh;
 }
 
 .menu a {
   text-decoration: none;
-  font-size: 1rem;
-  font-style: normal;
+  font-size: 1.4rem;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.025rem;
-  padding: 1vh 2vh 0.5vh;
+  text-transform: uppercase;
 }
 
 .ativo a {
   color: var(--primary-verde-escuro);
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.025rem;
+  background-color: var(--primary-verde-pastel);
+  padding: 0.5vh 2vh;
+  border-radius: 3vh;
+  box-shadow: 0 0.5vh 0.5vh 0 var(--primary-verde-medio);
 }
 
 .inativo a {
-  color: var(--primary-verde-medio);
+  color: var(--primary-verde-escuro-2);
 }
 
 .inativo a:hover {
-  color: var(--secondary-azul);
+  color: var(--primary-verde-escuro);
   font-weight: 700;
 }
 
 .perfil {
-  color: var(--primary-verde-escuro);
-  font-size: 2rem;
+  color: var(--secondary-azul-iara);
+  font-size: 5vh;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -181,7 +179,7 @@ nav {
 
 .cards-categorias li a {
   text-decoration: none;
-  color: var(--base-color-3);
+  color: var(--primary-verde-pastel);
 }
 
 .cards-categorias li {
@@ -296,9 +294,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 35vh;
   border-radius: 5vh;
-  padding: 3vh 0;
+  padding: 3vh 6vh;
 }
 
 form{
@@ -308,7 +305,7 @@ form{
 }
 
 .cadastro h2{
-  color: var(--base-color-1);
+  color: var(--secondary-bege);
   font-weight: 800;
   font-size: 3vh;
   text-transform: uppercase;
@@ -324,12 +321,13 @@ form{
 label{
   font-weight: 600;
   font-size: 2vh;
+  color: var(--base-0);
 }
 
 input {
   width: 100%;
   border: 0;
-  background-color: var(--base-color-1);
+  background-color: var(--base-0);
   height: 5vh;
   border-radius: 1vh;
   padding-left: 10px;
@@ -432,27 +430,9 @@ footer .icones a:hover,
 }
 
 .botao:hover {
-  background-color: var(--secondary-bege);
-  color: var(--primary-verde-escuro);
+  background-color: var(--secondary-azul);
+  color: var(--base-0);
   transform: scale(1.2);
-}
-
-.botao-hero {
-  padding: 1.5vh 6vh;
-  background-color: var(--secondary-color-80);
-  color: var(--base-color-1);
-  font-weight: 900;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 4vh;
-  transition: transform 0.5s ease-in-out;
-  font-size: 2vh;
-}
-
-.botao-hero:hover {
-  background-color: var(--primary-color-80);
-  color: var(--base-color-1);
 }
 
 a:focus {

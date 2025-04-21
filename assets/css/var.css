@@ -5,14 +5,18 @@
   --base-20: #CCCCCC;
   --base-40: #999999;
   --base-60: #666666;
-  --primary-verde-pastel: #EAF3ED;
+  --primary-verde-pastel: #ecf4ee;
   --primary-verde-suave: #B9D2C3;
   --primary-verde-menta: #9DCBB3;
   --primary-verde-medio: #5C9D8C;
   --primary-verde-escuro: #226B5F;
-  --secondary-bege: #FFFDF9;
+  --primary-verde-escuro-2: #104434;
+  --secondary-bege: #fffdfa;
   --secondary-rosa-claro: #FADADA;
   --secondary-azul: #021E4D;
+  --secondary-azul-iara: #03318C;
   --secondary-vermelho: #730202;
   --secondary-laranja-pessego: #F2AA6B;
+  --background-1: hsla(40, 100%, 99%, 0.9);
+  --background-2: hsla(140, 27%, 94%, 0.9);
 }
