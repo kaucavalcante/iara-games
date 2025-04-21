@@ -59,7 +59,7 @@ nav {
 }
 
 .inativo a {
-  color: var(--primary-verde-escuro-2);
+  color: var(--primary-verde-cabelo);
 }
 
 .inativo a:hover {
@@ -170,12 +170,12 @@ nav {
 
 .cards-categorias li a {
   text-decoration: none;
-  color: var(--primary-verde-pastel);
+  color: var(--primary-verde-cabelo);
 }
 
 .cards-categorias li {
   padding: 2vh 6vh;
-  background-color: var(--secondary-laranja-pessego);
+  background-color: var(--primary-verde-menta);
   border-radius: 4vh;
   border: 0.5vh solid transparent;
   transition: border-color 0.2s ease-in-out;
@@ -395,7 +395,7 @@ footer .icones a:hover,
 
 .botao {
   padding: 1.5vh 6vh;
-  background-color: var(--primary-verde-medio);
+  background-color: var(--primary-verde-escuro);
   color: var(--base-0);
   font-weight: 800;
   text-transform: uppercase;
@@ -421,4 +421,8 @@ a:focus {
   height: 30vh;
   background: url(../images/background-inferior.svg) repeat-x top center;
   background-size: auto 100%;
+}
+a:focus, button:focus, [role="button"]:focus {
+  outline: 3px solid var(--secondary-azul);
+  outline-offset: 4px;
 }
