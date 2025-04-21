@@ -7,15 +7,19 @@
 }
 
 body {
-  min-height: 100vh;
-  background: url(../images/folhagens.png);
+  height: 100vh;
+  background:
+    linear-gradient(to bottom, var(--secondary-color-1) 15%, var(--background-linear-1) 50%, var(--secondary-color-1) 95%),
+    url(../images/background-principal.svg) no-repeat bottom / cover fixed;
   font-family: "Nunito", sans-serif;
   color: var(--primary-verde-medio);
 }
 
+/* -------------------- NAV -------------------- */
+
 nav {
-  margin-top: 5vh;
-  position: static;
+  background: url(../images/background-superior.svg) repeat-x left top / auto 100%;
+  height: 20vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -52,11 +56,6 @@ nav {
 
 .ativo a {
   color: var(--primary-verde-escuro);
-  border-radius: 62.4375rem;
-  border-bottom: 1px solid var(--base-0);
-  background: #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-size: 1rem;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.025rem;
@@ -81,11 +80,176 @@ nav {
   transform: scale(1.5);
 }
 
-section {
+/* ---------------- SECTION HERO ---------------- */
+
+.hero {
+  background: url(../images/iara-hero.svg) no-repeat bottom center / 100% auto;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 60vh;
+  padding-bottom: 30vh;
+  gap: 3vh;
+}
+
+.hero h1 {
+  width: 40vh;
+  font-size: 5vh;
+  color: var(--secondary-color-80);
+}
+
+/* ------------- SECTION DESTAQUES -------------- */
+
+.destaques{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+.conteudo-destaques{
+  width: 50%;
+  padding-bottom: 5vh;
+}
+
+.destaques h2{
+  color: var(--base-color-3);
+  font-size: 3vh;
+  padding-bottom: 2vh;
+}
+
+.cards-destaques {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4vh;
+}
+
+.cards-destaques li {
+  width: 16vh;
+  height: 24vh;
+  overflow: hidden;
+  border-radius: 2vh;
+  border: 0.5vh solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.cards-destaques li:hover {
+  border-color: var(--secondary-color-80);
+}
+
+.cards-destaques img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------- SECTION CATEGORIAS ------------- */
+
+.categorias{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+.conteudo-categorias{
+  width: 50%;
+  padding-bottom: 5vh;
+}
+
+.categorias h2{
+  color: var(--base-color-3);
+  font-size: 3vh;
+  padding-bottom: 2vh;
+}
+
+.cards-categorias {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 4vh;
+}
+
+.cards-categorias li a {
+  text-decoration: none;
+  color: var(--base-color-3);
+}
+
+.cards-categorias li {
+  padding: 2vh 6vh;
+  background-color: hsl(160, 50%, 50%);
+  color: var(--base-color-1);
+  font-weight: 600;
+  border-radius: 4vh;
+  font-size: 2vh;
+  border: 0.5vh solid transparent;
+  transition: border-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cards-categorias li:hover {
+  border-color: var(--secondary-color-80);
+}
+
+/* ---------------- SECTION SOBRE --------------- */
+
+.sobre{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+.conteudo-sobre{
+  width: 50%;
+  padding-bottom: 5vh;
+}
+.sobre h2{
+  color: var(--base-color-3);
+  font-size: 3vh;
+  padding-bottom: 2vh;
+}
+.sobre p{
+  color: var(--base-color-3);
+  font-size: 2vh;
+  line-height: 3vh;
+}
+.rosto-iarinha{
+  border-radius: 2vh;
+  width: 25vh;
+  height: 25vh;
+}
+.sobre .bio{
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  gap: 2vh;
+}
+
+.texto-botao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+/* -------------------- LOJA -------------------- */
+
+.catalogo{
   display: flex;
   justify-content: center;
   align-items: start;
-  margin: 10vh 0 25vh 0;
+  margin: 5vh 0;
 }
 
 .cards {
@@ -118,8 +282,64 @@ section {
   object-fit: cover;
 }
 
+/* ------------------ CADASTRO ------------------ */
+
+.cadastro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro-conteudo{
+  background: linear-gradient(0deg, #2E6B6B 0%, #6AB18E 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35vh;
+  border-radius: 5vh;
+  padding: 3vh 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+.cadastro h2{
+  color: var(--base-color-1);
+  font-weight: 800;
+  font-size: 3vh;
+  text-transform: uppercase;
+  padding: 1vh 0;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 0;
+}
+
+label{
+  font-weight: 600;
+  font-size: 2vh;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  background-color: var(--base-color-1);
+  height: 5vh;
+  border-radius: 1vh;
+  padding-left: 10px;
+  font-size: 1.5vh;
+}
+
+/* ------------------- FOOTER ------------------- */
+
 footer {
-  background-color: var(--primary-verde-escuro);
+  background: linear-gradient(0deg, #2E6B6B 0%, #6AB18E 100%);
   display: flex;
   flex-direction: column;
   padding: 4vh 10vh;
@@ -194,6 +414,10 @@ footer .icones a:hover,
   font-weight: bold;
 }
 
+
+
+/* ------------------- OUTROS ------------------- */
+
 .botao {
   padding: 1.5vh 6vh;
   background-color: var(--primary-verde-medio);
@@ -213,7 +437,32 @@ footer .icones a:hover,
   transform: scale(1.2);
 }
 
+.botao-hero {
+  padding: 1.5vh 6vh;
+  background-color: var(--secondary-color-80);
+  color: var(--base-color-1);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4vh;
+  transition: transform 0.5s ease-in-out;
+  font-size: 2vh;
+}
+
+.botao-hero:hover {
+  background-color: var(--primary-color-80);
+  color: var(--base-color-1);
+}
+
 a:focus {
   outline: 2px solid var(--secondary-azul);
   outline-offset: 3px;
+}
+
+.decoracao {
+  width: 100%;
+  height: 30vh;
+  background: url(../images/background-inferior.svg) repeat-x top center;
+  background-size: auto 100%;
 }
