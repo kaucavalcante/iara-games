@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons"; // ✅ linha que faltava
 import Logo from "../assets/logo.svg";
-import "./cadastro.css";             
+import "./cadastro.css";
 import { auth } from "../services/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Link } from "react-router-dom";
@@ -57,7 +57,10 @@ function Cadastro() {
             <li className="inativo"><Link to="#">Fórum</Link></li>
             <li className="inativo"><Link to="#">Suporte</Link></li>
           </ul>
-          <Link className="perfil" to="/"><i className="fa-solid fa-circle-user"></i></Link>
+        <Link className="perfil" to="/">
+          <FontAwesomeIcon icon={faCircleUser} className="icone-perfil" />
+        </Link>
+
         </nav>
       </header>
 

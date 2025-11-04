@@ -71,6 +71,7 @@ header nav {
 
 .logo img:hover {
   transform: scale(1.2);
+  outline: none;
 }
 
 /* MENU */
@@ -108,15 +109,32 @@ header nav {
   box-shadow: 0 0.2rem 0.2rem 0 var(--primary-verde-medio);
 }
 
-
-.perfil i {
-  color: var(--secondary-azul-iara);
-  font-size: 3rem;
-  transition: transform 0.5s ease-in-out;
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem; 
+  outline: none; 
+  cursor: pointer;
 }
 
-.perfil i:hover {
+.perfil i,
+.perfil svg {
+  color: var(--secondary-azul-iara);
+  font-size: clamp(2rem, 4vw, 3rem); 
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+
+.perfil i:hover,
+.perfil svg:hover {
   transform: scale(1.2);
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+}
+
+.perfil:focus,
+.logo:focus {
+  outline: none; 
 }
 
 /*Footer*/
@@ -180,15 +198,26 @@ header nav {
 }
 
 
+.informacoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 .legal {
-  color: var(--base-0);
+  flex: 1 1 60%;
   font-size: 0.8rem;
-  width: 50%;
+  color: var(--base-0);
   line-height: 1.4;
 }
 
-.contato {
-  color: var(--secondary-bege);
+.contato-botao {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* alinha à esquerda */
+  gap: 0.5rem;
 }
 
 .contato a {
